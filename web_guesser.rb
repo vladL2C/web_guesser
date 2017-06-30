@@ -7,9 +7,20 @@ get '/' do
    
    guess = params['guess'] 
    message = msg(guess,number)
-   erb :index, :locals => {:number => number, :message => message}
+   color = get_color(guess,number)
+   erb :index, :locals => {:number => number, :message => message, :color => color}
 
+end
+
+def get_color(guess, number)
+	guess = guess.to_i
+	if guess > number + 5 
+		"red"
+	elsif guess == number 
+		"green"	
+	end 
 end 
+
 
 
 
@@ -17,7 +28,7 @@ def msg(guess,number)
  	if guess != nil 
  		guess = guess.to_i
  		if guess == number 
- 			"The number is: #{guess}"
+ 			"You Guessed it! #{guess}"
  		elsif guess > number 
  			if guess - number > 5 
  				"#{guess} is way too high"
