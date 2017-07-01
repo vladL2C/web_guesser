@@ -1,18 +1,11 @@
 <html>
- <head></head>
- <body>
- <p> Guess the number between 1 and 100 <%= number%> </p>
- <form>
- <input type ='text' name = 'guess' />
- <input type = 'submit' value = 'Guess!'/>
- </form>
-
-   <p> <%= message %> </p>
-   <p> <%= remaining %>  </p>
-  <style>
- 	body{
- 		background: <%= color %>;
- 	}
-  </style>
- </body>
+  <head></head>
+  <body>
+    <p> Guess a number between 1-100 (<%=number%>)</p>
+    <p> <%= message %> </p>
+    <form>
+      <input type='text' name='guess'/>
+      <input type='submit' value='Guess!'/>
+    </form>
+  </body>
 </html>
