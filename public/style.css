@@ -1,13 +1,12 @@
 		.back {
-			background: blue;
-			width: 300px;
-			height: 300px;
+			margin: 120px;
+			text-align: center;
+			display: block;
+			background: teal;
 		}
 
 
-        .front {
-       margin: 60px; 	
-      display: inline-block;
+        .front {	
       text-align: center;
       border: 2px;
       border-style: solid;
