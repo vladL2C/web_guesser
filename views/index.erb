@@ -1,11 +1,22 @@
 <html>
-  <head></head>
+  <head>
+  <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+  <style>
+        div {
+      background: <%=color%>
+            }
+  </style>
+  </head>  
   <body>
-    <p> Guess a number between 1-100 (<%=number%>)</p>
-    <p> <%= message %> </p>
+  <div class = "back">
+    <div class = "front">
+    <p> Guess a number between 1-100(<%=number%>)</p>
+    <p> <%= check %> </p>
     <form>
       <input type='text' name='guess'/>
       <input type='submit' value='Guess!'/>
     </form>
+    </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,15 @@
+		.back {
+			background: blue;
+			width: 300px;
+			height: 300px;
+		}
+
+
+        .front {
+       margin: 60px; 	
+      display: inline-block;
+      text-align: center;
+      border: 2px;
+      border-style: solid;
+            }
+
