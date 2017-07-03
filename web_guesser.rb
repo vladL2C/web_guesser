@@ -12,6 +12,7 @@ erb :index, :locals => {:number => number,:check => check,
 :color => color}
 end
 
+
 def colorize(guess,number)
 	if guess > number + 5 || guess < number - 5
 	   "red"
